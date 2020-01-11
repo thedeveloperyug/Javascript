@@ -1,0 +1,70 @@
+
+<!doctype html>
+<html>
+
+
+<head>
+<meta charset="utf-8">
+<title>JavaScript Arthmetic Operators using Buttons</title>
+<script>
+	function fun1()
+	{
+		var a=parseInt(t1.value);
+		var b=parseInt(t2.value);
+		var c = a + b;
+		document.getElementById("output").innerHTML = "Sum = " + c;
+	}
+	function fun2()
+	{
+		var a=parseInt(t1.value);
+		var b=parseInt(t2.value);
+		var c = a - b;
+		document.getElementById("output").innerHTML = "Sub = " + c;
+	}
+	function fun3()
+	{
+		var a=parseInt(t1.value);
+		var b=parseInt(t2.value);
+		var c = a * b;
+		document.getElementById("output").innerHTML = "Mul = " + c;
+	}
+	function fun4()
+	{
+		var a=parseInt(t1.value);
+		var b=parseInt(t2.value);
+		var c = a / b;
+		document.getElementById("output").innerHTML = "Div = " + c;
+	}
+</script>
+</head>
+
+<body>
+	<form>
+    	<table>
+        	<tr>
+            	<td>Enter 1st Number</td>
+                <td><input type="text" id="t1" /></td>
+            </tr>
+            <tr>
+            	<td>Enter 2nd Number</td>
+                <td><input type="text" id="t2" /></td>
+            </tr>
+            <tr>
+            	<td colspan="2" align="center"> 
+                <input type="button" value="Sum" onClick="fun1()"/> 
+                <input type="button" value="Sub" onClick="fun2()"/> 
+                <input type="button" value="Mul" onClick="fun3()"/> 
+                <input type="button" value="Div" onClick="fun4()"/> 
+                </td>
+            </tr>
+            <tr>
+            	<td colspan="2" align="center"> 
+                	<p id="output"> Output </p> 
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+
+</html>
